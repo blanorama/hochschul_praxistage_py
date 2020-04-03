@@ -46,6 +46,9 @@ class RomanConverterTest(unittest.TestCase):
     def test_convert50(self):
         self.assertEqual('L', convert(50))
 
+    def test_convert90(self):
+        self.assertEqual('XC', convert(90))
+
     # def test_convert2k18(self):
     #     self.assertEqual('MMXVIII', convert(2018), "The number 2018 should be converted to MMXVIII")
 
