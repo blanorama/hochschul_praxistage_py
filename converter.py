@@ -6,4 +6,4 @@ def convert(arg: int) -> str:
     while arg > 0:
         res += 'I'
         arg -= 1
-    return res
+    return res.replace('IIII', 'IV')
