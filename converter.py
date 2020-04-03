@@ -1,2 +1,2 @@
-def convert(input: str) -> int:
-    return
+def convert(arg: int) -> str:
+    return 'I'

@@ -2,7 +2,6 @@ import unittest
 from converter import convert
 
 
-
 class RomanConverterTest(unittest.TestCase):
 
     def test_convert1(self):
