@@ -1,4 +1,7 @@
 def convert(arg: int) -> str:
+    if arg is 9:
+        return 'IX'
+
     res: str = ''
 
     while arg > 9:
