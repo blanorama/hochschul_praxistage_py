@@ -28,8 +28,23 @@ class RomanConverterTest(unittest.TestCase):
     def test_convert10(self):
         self.assertEqual('X', convert(10))
 
+    def test_convert13(self):
+        self.assertEqual('XIII', convert(13))
+
+    def test_convert14(self):
+        self.assertEqual('XIV', convert(14))
+
+    def test_convert15(self):
+        self.assertEqual('XV', convert(15))
+
+    def test_convert39(self):
+        self.assertEqual('XXXIX', convert(39))
+
     def test_convert42(self):
         self.assertEqual('XLII', convert(42))
+
+    def test_convert50(self):
+        self.assertEqual('L', convert(50))
 
     # def test_convert2k18(self):
     #     self.assertEqual('MMXVIII', convert(2018), "The number 2018 should be converted to MMXVIII")

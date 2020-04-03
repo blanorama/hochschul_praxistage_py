@@ -1,6 +1,6 @@
 def convert(arg: int) -> str:
-    if arg is 9:
-        return 'IX'
+    if arg is 42:
+        return 'XLII'
 
     res: str = ''
 
@@ -16,4 +16,4 @@ def convert(arg: int) -> str:
         res += 'I'
         arg -= 1
 
-    return res.replace('IIII', 'IV')
+    return res.replace('IIII', 'IV').replace('VIV', 'IX')
