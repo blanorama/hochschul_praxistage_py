@@ -19,6 +19,12 @@ class RomanConverterTest(unittest.TestCase):
     def test_convert5(self):
         self.assertEqual('V', convert(5))
 
+    def test_convert8(self):
+        self.assertEqual('VIII', convert(8))
+
+    def test_convert9(self):
+        self.assertEqual('IX', convert(9))
+
     def test_convert10(self):
         self.assertEqual('X', convert(10))
 
