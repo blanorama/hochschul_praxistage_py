@@ -22,4 +22,5 @@ def convert(arg: int) -> str:
                 else:
                     res += cheat[i][0]
                     arg -= cheat[i][1]
+                    break
     return res
