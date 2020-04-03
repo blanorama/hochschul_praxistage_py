@@ -43,14 +43,29 @@ class RomanConverterTest(unittest.TestCase):
     def test_convert42(self):
         self.assertEqual('XLII', convert(42))
 
+    def test_convert49(self):
+        self.assertEqual('XLIX', convert(49))
+
     def test_convert50(self):
         self.assertEqual('L', convert(50))
+
+    def test_convert69(self):
+        self.assertEqual('LXVIII', convert(68))
 
     def test_convert90(self):
         self.assertEqual('XC', convert(90))
 
-    # def test_convert2k18(self):
-    #     self.assertEqual('MMXVIII', convert(2018), "The number 2018 should be converted to MMXVIII")
+    def test_convert99(self):
+        self.assertEqual('XCIX', convert(99))
+
+    def test_convert900(self):
+        self.assertEqual('CM', convert(900))
+
+    def test_convert999(self):
+        self.assertEqual('CMXCIX', convert(999))
+
+    def test_convert2k18(self):
+        self.assertEqual('MMXVIII', convert(2018), "The number 2018 should be converted to MMXVIII")
 
 
 if __name__ == "__main__":
